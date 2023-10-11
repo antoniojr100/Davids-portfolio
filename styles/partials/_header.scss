@@ -1,0 +1,26 @@
+
+#header{
+    background-color: $dark;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        li{
+            list-style-type: none;
+        }:hover{
+            font-weight: bold;
+        }
+    }
+    #name-title{
+        padding: 5rem 0;
+        text-align: center;
+        // border: 1px solid pink;
+        h1{
+            // padding-top: 3rem;
+        }
+        h3{
+            // padding-bottom: 0rem;
+        }
+    }
+}

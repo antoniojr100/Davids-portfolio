@@ -1,0 +1,34 @@
+#about,
+#services,
+#contact{
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+
+#about{
+    background-color: $bright;
+    text-align: center;
+}
+
+
+#services{
+    background-color: $light;
+    text-align: center;
+}
+
+
+#contact{
+    background-color: $mid;
+    text-align: center;
+}
+
+
+/*
+$dark: #16697A; header
+$mid: #489FB5; 
+$bright: #82C0CC;
+
+$light: #EDE7E3;
+
+$icons: #FFA62B;
+*/

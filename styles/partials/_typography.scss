@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+li,
+a,
+p{
+    font-size: 125%;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+// header
+#header{
+    li{
+        font-size: 1.5rem;
+        a{
+            text-decoration: none;
+            color: $black;
+        }
+    }
+    
+    h1{
+        font-size: 6rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+}
+
+// h2's
+h2{
+    font-size: 3rem;
+}
