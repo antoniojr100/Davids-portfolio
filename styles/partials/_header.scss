@@ -3,10 +3,18 @@
     background-color: $dark-green;
     border: 0.01px solid $dark-green;
     height: 85vh;
+
+    #hamburger-menu{
+        display: none;
+        margin: 0 auto;
+        cursor: pointer;
+        padding-top: 2rem;
+    }
+
     nav{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding-top: 2rem;
         li{
             color: $white;

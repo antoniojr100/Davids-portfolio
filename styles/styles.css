@@ -245,6 +245,12 @@ h2 {
   font-size: 3.5rem;
 }
 
+#header #hamburger-menu {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 3rem;
+}
 #header nav {
   color: #FFFFFF;
 }
@@ -333,10 +339,16 @@ html {
   border: 0.01px solid #204a2e;
   height: 85vh;
 }
+#header #hamburger-menu {
+  display: none;
+  margin: 0 auto;
+  cursor: pointer;
+  padding-top: 2rem;
+}
 #header nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-top: 2rem;
 }
 #header nav li {
@@ -433,7 +445,6 @@ footer {
 
 @media (max-width: 955px) {
   #header #name-title {
-    border: 1px solid pink;
     margin: 0 0 7.5rem 0;
   }
 }
@@ -443,8 +454,14 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  #header nav {
+    display: none;
+  }
+  #header #hamburger-menu {
+    display: block;
+  }
   #header #name-title {
-    margin: 0 0 10.5rem 0;
+    margin: 0 0 9rem 0;
   }
   #header #name-title h1 {
     font-size: 4.75rem;

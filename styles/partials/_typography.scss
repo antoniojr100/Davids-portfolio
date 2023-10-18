@@ -16,6 +16,12 @@ h2{
 
 // header
 #header{
+    #hamburger-menu{
+        background: none;
+        border: none;
+        color: $white;
+        font-size: 3rem;
+    }
     nav{
         color: $white;
         li{
