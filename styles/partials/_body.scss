@@ -7,10 +7,12 @@
 
 #about{
     background-color: $mint;
-    text-align: center;
-    color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem 0 4rem 0;
     #headshot-container{
-        width: 15%;
+        width: 15rem;
         margin: 4rem auto;
         img{
             border-radius: 90%;

@@ -1,3 +1,14 @@
+// h1
+@media (max-width: 955px){
+    #header{
+        #name-title{
+            border: 1px solid pink;
+            margin: 0 0 7.5rem 0;
+        }
+    }
+}
+
+// service icons
 @media (max-width: 900px){
     #services{
         // background-color: yellow;
@@ -11,14 +22,54 @@
 }
 
 
+// h1, service icons, contact icons
 @media (max-width: 600px){
+
+    #header{
+        #name-title{
+            margin: 0 0 10.5rem 0;
+            h1{
+                font-size: 4.75rem;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
     #services{
-        // background-color: yellow;
         #service-list{
             flex-direction: column;
-            // border: 1px solid green;
             .service-item{
                 width: 100%;
+            }
+        }
+    }
+
+    #contact{
+        #contact-list{
+            flex-direction: column;
+        }
+    }
+}
+
+// h1
+@media (max-width: 450px){
+    #header{
+        #name-title{
+            h1{
+                font-size: 4rem;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
+
+// h1
+@media (max-width: 380px){
+    #header{
+        #name-title{
+            h1{
+                font-size: 3.25rem;
+                margin-bottom: 4.5rem;
             }
         }
     }

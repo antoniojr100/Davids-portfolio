@@ -9,6 +9,11 @@ i{
     font-family: 'Montserrat', sans-serif;
 }
 
+// h2's
+h2{
+    font-size: 3rem;
+}
+
 // header
 #header{
     nav{
@@ -41,16 +46,21 @@ i{
 
     #skip-link-container{
         color: $white;
-        font-size: 3.5rem;
+        font-size: 2rem;
         text-align: center;
     }
 }
 
-// h2's
-h2{
-    font-size: 3rem;
+// About
+#about{
+    text-align: center;
+    color: $black;
 }
 
+// Services
+
+
+// Contact
 #contact{
     color: $footer;
     a:visited{

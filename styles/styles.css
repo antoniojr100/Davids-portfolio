@@ -241,6 +241,10 @@ i {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 #header nav {
   color: #FFFFFF;
 }
@@ -272,12 +276,13 @@ i {
 }
 #header #skip-link-container {
   color: #FFFFFF;
-  font-size: 3.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
-h2 {
-  font-size: 3rem;
+#about {
+  text-align: center;
+  color: #000000;
 }
 
 #contact {
@@ -332,7 +337,7 @@ html {
 }
 #header #name-title {
   padding: 5rem 0;
-  margin: 0 0 15rem 0;
+  margin: 0 0 10rem 0;
   text-align: center;
 }
 #header #name-title h1 {
@@ -366,11 +371,13 @@ html {
 
 #about {
   background-color: #78c591;
-  text-align: center;
-  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem 0 4rem 0;
 }
 #about #headshot-container {
-  width: 15%;
+  width: 15rem;
   margin: 4rem auto;
 }
 #about #headshot-container img {
@@ -419,16 +426,44 @@ footer {
   padding: 1rem 0;
 }
 
+@media (max-width: 955px) {
+  #header #name-title {
+    border: 1px solid pink;
+    margin: 0 0 7.5rem 0;
+  }
+}
 @media (max-width: 900px) {
   #services #service-list .service-item {
     width: 50%;
   }
 }
 @media (max-width: 600px) {
+  #header #name-title {
+    margin: 0 0 10.5rem 0;
+  }
+  #header #name-title h1 {
+    font-size: 4.75rem;
+    margin-bottom: 4rem;
+  }
   #services #service-list {
     flex-direction: column;
   }
   #services #service-list .service-item {
     width: 100%;
+  }
+  #contact #contact-list {
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  #header #name-title h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 380px) {
+  #header #name-title h1 {
+    font-size: 3.25rem;
+    margin-bottom: 4.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
