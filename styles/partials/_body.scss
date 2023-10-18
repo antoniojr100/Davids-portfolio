@@ -24,28 +24,22 @@
 
 #services{
     background-color: $white;
-    text-align: center;
-    color: $icons;
     #service-list{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
         list-style-type: none;
-        // border: 1px solid black;
         padding: 0;
         .service-item{
             width: calc(100% / 3);
-            .icon-container{
-                font-size: 3.5rem;
-            }
         }
     }
 }
 
 
 #contact{
-    background-color: $contact;
+    background-color: $light-blue;
     text-align: center;
     #contact-list{
         list-style-type: none;
@@ -53,8 +47,5 @@
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0;
-        .icon-container{
-            font-size: 3.5rem;
-        }
     }
 }

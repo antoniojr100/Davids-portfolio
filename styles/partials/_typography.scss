@@ -11,7 +11,7 @@ i{
 
 // h2's
 h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 // header
@@ -27,7 +27,9 @@ h2{
                 font-weight: bold;
                 border-bottom: 3px solid $white;
                 font-weight: 700;
-            }:visited{
+            }:visited,
+            :active,
+            :focus{
                 color: $white;
             }
         }
@@ -58,25 +60,35 @@ h2{
 }
 
 // Services
-
-
-// Contact
-#contact{
-    color: $footer;
-    a:visited{
-        color: $footer;
+#services{
+    text-align: center;
+    color: $icons;
+    .icon-container{
+        font-size: 3.5rem;
     }
 }
 
+// Contact
+#contact{
+    color: $icons;
+    .icon-container{
+        font-size: 3.5rem;
+        a:visited{
+            color: $icons;
+        }
+    }
+}
+
+// Footer
 footer{
-    color: $contact;
+    color: $light-blue;
     h3{
         font-size: 1.5rem;
         a{
             font-size: 1.5rem;
             text-decoration: none;
         }:visited{
-            color: $contact;
+            color: $light-blue;
         }
     }
 }

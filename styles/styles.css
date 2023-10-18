@@ -242,7 +242,7 @@ i {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 #header nav {
@@ -260,7 +260,9 @@ h2 {
   border-bottom: 3px solid #FFFFFF;
   font-weight: 700;
 }
-#header nav li :visited {
+#header nav li :visited,
+#header nav li :active,
+#header nav li :focus {
   color: #FFFFFF;
 }
 #header #name-title {
@@ -285,11 +287,22 @@ h2 {
   color: #000000;
 }
 
-#contact {
-  color: #1B3F26;
+#services {
+  text-align: center;
+  color: #163420;
 }
-#contact a:visited {
-  color: #1B3F26;
+#services .icon-container {
+  font-size: 3.5rem;
+}
+
+#contact {
+  color: #163420;
+}
+#contact .icon-container {
+  font-size: 3.5rem;
+}
+#contact .icon-container a:visited {
+  color: #163420;
 }
 
 footer {
@@ -387,8 +400,6 @@ html {
 
 #services {
   background-color: #FFFFFF;
-  text-align: center;
-  color: #163420;
 }
 #services #service-list {
   display: flex;
@@ -400,9 +411,6 @@ html {
 }
 #services #service-list .service-item {
   width: 33.3333333333%;
-}
-#services #service-list .service-item .icon-container {
-  font-size: 3.5rem;
 }
 
 #contact {
@@ -416,12 +424,9 @@ html {
   justify-content: space-evenly;
   padding: 0;
 }
-#contact #contact-list .icon-container {
-  font-size: 3.5rem;
-}
 
 footer {
-  background-color: #1B3F26;
+  background-color: #204a2e;
   text-align: center;
   padding: 1rem 0;
 }
