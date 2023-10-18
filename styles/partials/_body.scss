@@ -28,18 +28,14 @@
         display: flex;
         justify-content: space-around;
         flex-direction: row;
+        flex-wrap: wrap;
         list-style-type: none;
         // border: 1px solid black;
         padding: 0;
         .service-item{
-            // border: 1px solid blue;
-            width: calc(33% / 3);
+            width: calc(100% / 3);
             .icon-container{
-                // border: 1px solid red;
                 font-size: 3.5rem;
-                i{
-                    // border: 1px solid green;
-                }
             }
         }
     }

@@ -2,6 +2,7 @@
 #header{
     background-color: $dark-green;
     border: 0.01px solid $dark-green;
+    height: 85vh;
     nav{
         display: flex;
         flex-direction: row;
@@ -29,19 +30,19 @@
     }
 
     #skip-link-container{
-        color: $white;
-        font-size: 3.5rem;
-        margin-bottom: 1.25rem;
-        text-align: center;
         transition-duration: .2s;
         #skip-link{
             color: $white;
+            transition-duration: .2s;
             scroll-behavior: smooth;
             i{
                 transition-duration: .2s;
-            }:hover{
-            transform: scale(1.5);
-            transition-duration: .2s;
+                &:hover,
+                &:focus,
+                &:active{
+                    transform: scale(1.5);
+                    transition-duration: .5s;
+                }
             }
         }
     }

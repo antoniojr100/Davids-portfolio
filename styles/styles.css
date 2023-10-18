@@ -235,7 +235,8 @@ h2,
 h3,
 li,
 a,
-p {
+p,
+i {
   font-size: 125%;
   font-family: "Montserrat", sans-serif;
 }
@@ -269,6 +270,11 @@ p {
   font-size: 1.8rem;
   font-weight: 400;
 }
+#header #skip-link-container {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  text-align: center;
+}
 
 h2 {
   font-size: 3rem;
@@ -300,13 +306,14 @@ footer h3 :visited {
   width: 80%;
 }
 
-body {
+html {
   scroll-behavior: smooth;
 }
 
 #header {
   background-color: #204a2e;
   border: 0.01px solid #204a2e;
+  height: 85vh;
 }
 #header nav {
   display: flex;
@@ -335,22 +342,19 @@ body {
   margin: -4rem 0 3rem 0;
 }
 #header #skip-link-container {
-  color: #FFFFFF;
-  font-size: 3.5rem;
-  margin-bottom: 1.25rem;
-  text-align: center;
   transition-duration: 0.2s;
 }
 #header #skip-link-container #skip-link {
   color: #FFFFFF;
+  transition-duration: 0.2s;
   scroll-behavior: smooth;
 }
 #header #skip-link-container #skip-link i {
   transition-duration: 0.2s;
 }
-#header #skip-link-container #skip-link :hover {
+#header #skip-link-container #skip-link i:hover, #header #skip-link-container #skip-link i:focus, #header #skip-link-container #skip-link i:active {
   transform: scale(1.5);
-  transition-duration: 0.2s;
+  transition-duration: 0.5s;
 }
 
 #about,
@@ -383,15 +387,17 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
 }
 #services #service-list .service-item {
-  width: 11%;
+  width: 33.3333333333%;
 }
 #services #service-list .service-item .icon-container {
   font-size: 3.5rem;
 }
+
 #contact {
   background-color: #A5F8F8;
   text-align: center;
@@ -411,4 +417,18 @@ footer {
   background-color: #1B3F26;
   text-align: center;
   padding: 1rem 0;
+}
+
+@media (max-width: 900px) {
+  #services #service-list .service-item {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  #services #service-list {
+    flex-direction: column;
+  }
+  #services #service-list .service-item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

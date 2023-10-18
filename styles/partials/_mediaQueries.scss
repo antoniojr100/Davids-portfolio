@@ -1,0 +1,25 @@
+@media (max-width: 900px){
+    #services{
+        // background-color: yellow;
+        #service-list{
+            // border: 1px solid green;
+            .service-item{
+                width: calc(100% / 2);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px){
+    #services{
+        // background-color: yellow;
+        #service-list{
+            flex-direction: column;
+            // border: 1px solid green;
+            .service-item{
+                width: 100%;
+            }
+        }
+    }
+}
