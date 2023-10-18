@@ -315,6 +315,7 @@ body {
   padding-top: 2rem;
 }
 #header nav li {
+  color: #FFFFFF;
   list-style-type: none;
   transition-duration: 0.2s;
 }
