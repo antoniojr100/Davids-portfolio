@@ -6,29 +6,57 @@
 }
 
 #about{
-    background-color: $bright;
+    background-color: $mint;
     text-align: center;
+    color: $black;
+    #headshot-container{
+        width: 15%;
+        margin: 4rem auto;
+        img{
+            border-radius: 90%;
+            width: 100%;
+        }
+    }
 }
 
 
 #services{
-    background-color: $light;
+    background-color: $white;
     text-align: center;
+    color: $icons;
+    #service-list{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        list-style-type: none;
+        // border: 1px solid black;
+        padding: 0;
+        .service-item{
+            // border: 1px solid blue;
+            width: calc(33% / 3);
+            .icon-container{
+                // border: 1px solid red;
+                font-size: 3.5rem;
+                i{
+                    // border: 1px solid green;
+                }
+            }
+        }
+    }
 }
 
 
 #contact{
-    background-color: $mid;
+    background-color: $contact;
     text-align: center;
+    #contact-list{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        .icon-container{
+            font-size: 3.5rem;
+        }
+    }
 }
-
-
-/*
-$dark: #16697A; header
-$mid: #489FB5; 
-$bright: #82C0CC;
-
-$light: #EDE7E3;
-
-$icons: #FFA62B;
-*/

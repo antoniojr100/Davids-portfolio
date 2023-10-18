@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Favicon" href="./assets/favicon2.jpg">
 </head>
 <body>
     <header id="header">
@@ -18,22 +20,33 @@
                 <li><a href="#contact">Contact</a></li>
             </nav>
 
-        <div id="name-title">
-            <h1>David</h1>
-            <h3>position</h3>
-        </div>
+            <div id="name-title">
+                <h1>David Carvalho</h1>
+                <h3>position</h3>
+            </div>
+
+            <!-- skip link -->
+            <div id="skip-link-container">
+                <a href="#about" id="skip-link">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
 
         </div>
     </header>
     <!-- #head ENDS -->
 
 <!-- To do:
+    - skip link scroll
+    - Favicon
+    - responsive
+    - upload to netlify
+
+    From David:
     - headshot
     - about
-    - responsive
     - ask about domain
     - which services
-    - back-up font(s)
 -->
 
     <!-- #about STARTS -->
@@ -42,6 +55,10 @@
             <h2>About</h2>
 
             <!-- headshot -->
+            <div id="headshot-container">
+                <img src="./assets/blank.png" alt="Headshot">
+            </div>
+
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed omnis deserunt eos facilis suscipit nam impedit repellat, in non praesentium? Quae voluptatum laborum voluptatibus illum pariatur incidunt consequatur nobis nemo? Ab fugiat ad accusamus animi vitae quaerat unde tempora reprehenderit placeat! Modi harum eaque recusandae, id repellat assumenda animi dolores?</p>
         </div>
     </section>
@@ -52,7 +69,38 @@
     <section id="services">
         <div class="wrapper">
             <h2>Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed omnis deserunt eos facilis suscipit nam impedit repellat, in non praesentium? Quae voluptatum laborum voluptatibus illum pariatur incidunt consequatur nobis nemo? Ab fugiat ad accusamus animi vitae quaerat unde tempora reprehenderit placeat! Modi harum eaque recusandae, id repellat assumenda animi dolores?</p>
+            <ul id="service-list">
+                <li class="service-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <p class="service-title">Service #1</p>
+                </li>
+                <li class="service-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <p class="service-title">Service #2</p>
+                </li>
+                <li class="service-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <p class="service-title">Service #3</p>
+                </li>
+                <li class="service-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <p class="service-title">Service #4</p>
+                </li>
+                <li class="service-item">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <p class="service-title">Service #5</p>
+                </li>
+            </ul>
         </div>
     </section>
     <!-- #services ENDS -->
@@ -62,16 +110,37 @@
     <section id="contact">
         <div class="wrapper">
             <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed omnis deserunt eos facilis suscipit nam impedit repellat, in non praesentium? Quae voluptatum laborum voluptatibus illum pariatur incidunt consequatur nobis nemo? Ab fugiat ad accusamus animi vitae quaerat unde tempora reprehenderit placeat! Modi harum eaque recusandae, id repellat assumenda animi dolores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed omnis deserunt eos facilis suscipit nam impedit dolores?</p>
+            <ul id="contact-list">
+                <li class="contact-link">
+                    <div class="icon-container">
+                        <a href="" class="contact-a">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <p class="contact-title">LinkedIn</p>
+                </li>
+                <li class="contact-link">
+                    <div class="icon-container">
+                        <a href="" class="contact-a">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="contact-title">Email</p>
+                </li>
+            </ul>
+
         </div>
     </section>
     <!-- #contact ENDS -->
 
+    <!-- Footer STARTS -->
     <footer id="footer">
         <div class="wrapper">
-            
+            <h3>Made by <a href="https://antonioarredondo.netlify.app/" target="_blank" rel="noopener">Antonio Arredondo</a></h3>
         </div>
     </footer>
+    <!-- Footer ENDS -->
 
 </body>
 </html>

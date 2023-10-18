@@ -1,6 +1,7 @@
 
 #header{
-    background-color: $dark;
+    background-color: $dark-green;
+    border: 0.01px solid $dark-green;
     nav{
         display: flex;
         flex-direction: row;
@@ -8,19 +9,39 @@
         padding-top: 2rem;
         li{
             list-style-type: none;
+            transition-duration: .2s;
         }:hover{
-            font-weight: bold;
+            transform: scale(1.25);
+            transition-duration: .2s;
         }
     }
     #name-title{
         padding: 5rem 0;
+        margin: 0 0 15rem 0;
         text-align: center;
-        // border: 1px solid pink;
         h1{
-            // padding-top: 3rem;
+            padding-top: 2rem 0 0 0;
         }
         h3{
-            // padding-bottom: 0rem;
+            margin: -4rem 0 3rem 0;
+        }
+    }
+
+    #skip-link-container{
+        color: $white;
+        font-size: 3.5rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+        transition-duration: .2s;
+        #skip-link{
+            color: $white;
+            scroll-behavior: smooth;
+            i{
+                transition-duration: .2s;
+            }:hover{
+            transform: scale(1.5);
+            transition-duration: .2s;
+            }
         }
     }
 }

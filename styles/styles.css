@@ -237,25 +237,62 @@ li,
 a,
 p {
   font-size: 125%;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-#header li {
-  font-size: 1.5rem;
+#header nav {
+  color: #FFFFFF;
 }
-#header li a {
+#header nav li {
+  font-size: 1.25rem;
+}
+#header nav li a {
   text-decoration: none;
-  color: #000000;
+  font-weight: 700;
 }
-#header h1 {
+#header nav li :hover {
+  font-weight: bold;
+  border-bottom: 3px solid #FFFFFF;
+  font-weight: 700;
+}
+#header nav li :visited {
+  color: #FFFFFF;
+}
+#header #name-title {
+  color: #FFFFFF;
+}
+#header #name-title h1 {
   font-size: 6rem;
+  font-weight: 700;
 }
-#header h3 {
+#header #name-title h3 {
   font-size: 1.8rem;
+  font-weight: 400;
 }
 
 h2 {
   font-size: 3rem;
+}
+
+#contact {
+  color: #1B3F26;
+}
+#contact a:visited {
+  color: #1B3F26;
+}
+
+footer {
+  color: #A5F8F8;
+}
+footer h3 {
+  font-size: 1.5rem;
+}
+footer h3 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+footer h3 :visited {
+  color: #A5F8F8;
 }
 
 .wrapper {
@@ -263,8 +300,13 @@ h2 {
   width: 80%;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 #header {
-  background-color: #1175a4;
+  background-color: #204a2e;
+  border: 0.01px solid #204a2e;
 }
 #header nav {
   display: flex;
@@ -274,14 +316,42 @@ h2 {
 }
 #header nav li {
   list-style-type: none;
+  transition-duration: 0.2s;
 }
 #header nav :hover {
-  font-weight: bold;
+  transform: scale(1.25);
+  transition-duration: 0.2s;
 }
 #header #name-title {
   padding: 5rem 0;
+  margin: 0 0 15rem 0;
   text-align: center;
 }
+#header #name-title h1 {
+  padding-top: 2rem 0 0 0;
+}
+#header #name-title h3 {
+  margin: -4rem 0 3rem 0;
+}
+#header #skip-link-container {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  transition-duration: 0.2s;
+}
+#header #skip-link-container #skip-link {
+  color: #FFFFFF;
+  scroll-behavior: smooth;
+}
+#header #skip-link-container #skip-link i {
+  transition-duration: 0.2s;
+}
+#header #skip-link-container #skip-link :hover {
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+}
+
 #about,
 #services,
 #contact {
@@ -290,26 +360,54 @@ h2 {
 }
 
 #about {
-  background-color: #82C0CC;
+  background-color: #78c591;
   text-align: center;
+  color: #000000;
+}
+#about #headshot-container {
+  width: 15%;
+  margin: 4rem auto;
+}
+#about #headshot-container img {
+  border-radius: 90%;
+  width: 100%;
 }
 
 #services {
-  background-color: #EDE7E3;
+  background-color: #FFFFFF;
   text-align: center;
+  color: #163420;
 }
-
+#services #service-list {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+#services #service-list .service-item {
+  width: 11%;
+}
+#services #service-list .service-item .icon-container {
+  font-size: 3.5rem;
+}
 #contact {
-  background-color: #489FB5;
+  background-color: #A5F8F8;
   text-align: center;
 }
+#contact #contact-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0;
+}
+#contact #contact-list .icon-container {
+  font-size: 3.5rem;
+}
 
-/*
-$dark: #16697A; header
-$mid: #489FB5; 
-$bright: #82C0CC;
-
-$light: #EDE7E3;
-
-$icons: #FFA62B;
-*//*# sourceMappingURL=styles.css.map */
+footer {
+  background-color: #1B3F26;
+  text-align: center;
+  padding: 1rem 0;
+}/*# sourceMappingURL=styles.css.map */
