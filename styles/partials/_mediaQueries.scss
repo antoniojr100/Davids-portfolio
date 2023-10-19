@@ -81,3 +81,15 @@
         }
     }
 }
+
+
+// skip link handling tablet heights (1080px, 1100px)
+@media(max-height: 1110px){
+    #header{ 
+        // background-color: blue;
+
+        #name-title{
+            margin: 0 0 6rem 0;
+        }
+    }
+}

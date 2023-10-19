@@ -2,7 +2,7 @@
 #header{
     background-color: $dark-green;
     border: 0.01px solid $dark-green;
-    height: 85vh;
+    height: 90vh;
 
     #hamburger-menu{
         display: none;
@@ -38,6 +38,7 @@
     }
 
     #skip-link-container{
+        bottom: 2rem;
         transition-duration: .2s;
         #skip-link{
             color: $white;
