@@ -439,6 +439,7 @@ footer {
   background-color: #204a2e;
   text-align: center;
   padding: 1rem 0;
+  color: #FFFFFF;
 }
 
 @media (max-width: 955px) {
