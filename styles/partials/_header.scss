@@ -4,27 +4,31 @@
     border: 0.01px solid $dark-green;
     height: 90vh;
 
-    #hamburger-menu{
-        display: none;
-        margin: 0 auto;
-        cursor: pointer;
-        padding-top: 2rem;
-    }
+    // nav{
+        list-style-type: none;
+        .slide-nav{
+            display: none;
+        }
 
-    nav{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 2rem;
-        li{
-            color: $white;
-            list-style-type: none;
-            transition-duration: .2s;
-        }:hover{
-            transform: scale(1.25);
-            transition-duration: .2s;
+        #main-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 2rem;
+            li{
+                color: $white;
+                transition-duration: .2s;
+                list-style-type: none;
+            }:hover{
+                transform: scale(1.25);
+                transition-duration: .2s;
+            }
         }
-    }
+    // }
     #name-title{
         padding: 5rem 0;
         margin: 0 0 10rem 0;
