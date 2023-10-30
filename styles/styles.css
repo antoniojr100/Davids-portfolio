@@ -370,7 +370,6 @@ html {
 }
 #header #skip-link-container {
   bottom: 3rem;
-  border: 1px solid red;
   transition-duration: 0.2s;
 }
 #header #skip-link-container #skip-link {
