@@ -3,4 +3,16 @@ footer{
     text-align: center;
     padding: 1rem 0;
     color: $white;
+    h3,
+    a{
+        color: $white;
+        // border: 1px solid red;
+    }:visited,
+    :active,
+    :focus{
+        color: $white;
+    }
+    #portfolio{
+        color: white;
+    }
 }

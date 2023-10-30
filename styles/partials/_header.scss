@@ -3,9 +3,7 @@
     background-color: $dark-green;
     border: 0.01px solid $dark-green;
     height: 90vh;
-
-    // nav{
-        list-style-type: none;
+    list-style-type: none;
         .slide-nav{
             display: none;
         }
@@ -28,7 +26,6 @@
                 transition-duration: .2s;
             }
         }
-    // }
     #name-title{
         padding: 5rem 0;
         margin: 0 0 10rem 0;
@@ -37,12 +34,13 @@
             padding-top: 2rem 0 0 0;
         }
         h3{
-            margin: -4rem 0 3rem 0;
+            margin: -4rem 0 3.5rem 0;
         }
     }
 
     #skip-link-container{
-        bottom: 2rem;
+        bottom: 3rem;
+        border: 1px solid red;
         transition-duration: .2s;
         #skip-link{
             color: $white;
